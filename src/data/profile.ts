@@ -38,7 +38,7 @@ export const profile = {
   freelancer: 'https://www.freelancer.com/u/Raj02Priyesh',
   github: 'https://github.com/Raj02Priyesh',
   stats: [
-    { value: '3', label: 'live projects you can try now' },
+    { value: '4', label: 'live projects you can try now' },
     { value: '120+', label: 'REST endpoints shipped' },
     { value: 'CI/CD', label: 'tests & deploys on every push' },
   ],
@@ -54,6 +54,28 @@ export const services = [
 ]
 
 export const featured: Project[] = [
+  {
+    slug: 'slotwise',
+    title: 'Slotwise — appointment booking SaaS',
+    kind: 'Full-stack SaaS',
+    summary:
+      'Online booking for salons, clinics and studios. Any business can sign up, add services, team and opening hours, and share its own booking page; customers pick a service, person and free time in a few taps.',
+    highlights: [
+      'Double bookings blocked by the database itself, proven by a concurrency test',
+      'Availability computed in each business’s time zone with notice and booking-window rules',
+      'CI runs unit, integration and Playwright tests, then ships a Docker image that deploys only when checks pass',
+    ],
+    stack: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'Docker', 'Playwright', 'GitHub Actions'],
+    links: [
+      { label: 'Book a demo slot', href: 'https://slotwise-6hrk.onrender.com/book/velvet-vine' },
+      { label: 'Owner dashboard', href: 'https://slotwise-6hrk.onrender.com/login' },
+      { label: 'Code', href: 'https://github.com/Raj02Priyesh/slotwise' },
+    ],
+    images: [
+      { src: 'images/projects/slotwise-booking.jpg', alt: 'Slotwise customer booking page with free time slots' },
+      { src: 'images/projects/slotwise-dashboard.jpg', alt: 'Slotwise owner dashboard listing upcoming bookings' },
+    ],
+  },
   {
     slug: 'cartzy-app',
     title: 'Cartzy — Flutter shopping app',
