@@ -122,11 +122,12 @@ export const featured: Project[] = [
       'The production-style backend behind the Cartzy app: products, categories, cart, wishlist, orders with tracking, returns, ratings and a full admin API.',
     highlights: [
       '120+ endpoints with JWT auth and role-based access control',
-      '68-check end-to-end test suite runs on every push in GitHub Actions',
+      '70-check end-to-end test suite runs on every push in GitHub Actions',
       'Deployed on Render with MongoDB Atlas; 0 known npm vulnerabilities',
     ],
     stack: ['Node.js', 'Express', 'MongoDB', 'JWT', 'GitHub Actions', 'Render'],
     links: [
+      { label: 'API docs (Swagger)', href: 'https://cartzy-ecommerce-backend.onrender.com/api-docs' },
       { label: 'Live API', href: 'https://cartzy-ecommerce-backend.onrender.com/api/user/products/all' },
       { label: 'Code', href: 'https://github.com/Raj02Priyesh/cartzy-ecommerce-backend' },
     ],
