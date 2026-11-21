@@ -1,4 +1,4 @@
-// All portfolio content lives here — edit this file to update the site.
+// All portfolio content lives here - edit this file to update the site.
 
 export interface Link {
   label: string
@@ -17,20 +17,13 @@ export interface Project {
   images?: { src: string; alt: string; phone?: boolean }[]
 }
 
-export interface SmallProject {
-  title: string
-  summary: string
-  stack: string[]
-  href: string
-}
-
 export const profile = {
   name: 'Priyesh Raj',
   title: 'Full Stack Developer',
   tagline: 'Design to deployment',
   intro:
-    'I build web apps, mobile apps and APIs for startups and small businesses — from the first Figma screen to a tested, deployed product with CI/CD.',
-  location: 'India · works with clients worldwide (IST)',
+    'I build web apps, mobile apps and APIs for startups and small businesses - from the first Figma screen to a tested, deployed product with CI/CD.',
+  location: 'Pune, India · works with clients worldwide (IST)',
   photo: 'images/priyesh.jpg',
   email: 'freelancerpriyesh@gmail.com',
   phone: '+91 62044 04307',
@@ -56,7 +49,7 @@ export const services = [
 export const featured: Project[] = [
   {
     slug: 'slotwise',
-    title: 'Slotwise — appointment booking SaaS',
+    title: 'Slotwise - appointment booking SaaS',
     kind: 'Full-stack SaaS',
     summary:
       'Online booking for salons, clinics and studios. Any business can sign up, add services, team and opening hours, and share its own booking page; customers pick a service, person and free time in a few taps.',
@@ -78,10 +71,10 @@ export const featured: Project[] = [
   },
   {
     slug: 'cartzy-app',
-    title: 'Cartzy — Flutter shopping app',
+    title: 'Cartzy - Flutter shopping app',
     kind: 'Mobile & web app',
     summary:
-      'A complete shopping app for Android and the web: catalog, search, product pages, cart, wishlist, checkout with saved addresses, and order tracking — running on my live e-commerce API.',
+      'A complete shopping app for Android and the web: catalog, search, product pages, cart, wishlist, checkout with saved addresses, and order tracking - running on my live e-commerce API.',
     highlights: [
       'Full shopping flow tested end-to-end against the live API',
       'Session restore, friendly error and cold-start states',
@@ -104,7 +97,7 @@ export const featured: Project[] = [
     title: 'Bakery & salon website',
     kind: 'Small-business website',
     summary:
-      'A responsive one-page site for local businesses. One React codebase ships two complete brands — a cosy bakery and a calm salon — with menus, galleries, reviews, maps and a smart order/booking form.',
+      'A responsive one-page site for local businesses. One React codebase ships two complete brands - a cosy bakery and a calm salon - with menus, galleries, reviews, maps and a smart order/booking form.',
     highlights: [
       'Re-skin for a new client by editing one data file',
       'Booking form checks opening days, hours and notice, then hands off to WhatsApp',
@@ -123,7 +116,7 @@ export const featured: Project[] = [
   },
   {
     slug: 'cartzy-api',
-    title: 'Cartzy — e-commerce REST API',
+    title: 'Cartzy - e-commerce REST API',
     kind: 'Backend & DevOps',
     summary:
       'The production-style backend behind the Cartzy app: products, categories, cart, wishlist, orders with tracking, returns, ratings and a full admin API.',
@@ -140,44 +133,17 @@ export const featured: Project[] = [
   },
 ]
 
-export const moreWork: SmallProject[] = [
-  {
-    title: 'Tomato — restaurant backend',
-    summary: 'High-performance REST APIs for restaurant operations, table reservations and customer management.',
-    stack: ['Go', 'REST'],
-    href: 'https://github.com/02priyeshraj/Tomato_Restaurant_Management_Backend_System',
-  },
-  {
-    title: 'Melanoma detection',
-    summary: 'Deep-learning skin-lesion classifier (ResNet50) with Grad-CAM explainability, benchmarked against SVM and KNN.',
-    stack: ['Python', 'Deep learning', 'Jupyter'],
-    href: 'https://github.com/02priyeshraj/Melanoma_Detection_System',
-  },
-  {
-    title: 'AI blog generator',
-    summary: 'Generates short blog posts on any topic with a LLaMA 2 model behind a simple Streamlit interface.',
-    stack: ['Python', 'LLM', 'Streamlit'],
-    href: 'https://github.com/02priyeshraj/AI_Blog_Generator',
-  },
-  {
-    title: 'ZenPy Python IDE',
-    summary: 'A desktop Python IDE with syntax highlighting, file management and an integrated terminal.',
-    stack: ['Python', 'PyQt5'],
-    href: 'https://github.com/02priyeshraj/ZenPy_Python_IDE',
-  },
-]
-
 export const skills: { group: string; items: string[] }[] = [
-  { group: 'Frontend', items: ['React', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'HTML & CSS'] },
+  { group: 'Frontend', items: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'HTML & CSS'] },
   { group: 'Mobile', items: ['Flutter', 'Dart', 'Android', 'Responsive web'] },
   { group: 'Backend', items: ['Node.js', 'Express', 'Go', 'Python', 'REST APIs', 'JWT auth'] },
-  { group: 'Data', items: ['MongoDB', 'PostgreSQL', 'Mongoose'] },
-  { group: 'DevOps', items: ['Git & GitHub', 'GitHub Actions', 'CI/CD', 'Render', 'GitHub Pages'] },
-  { group: 'Design & AI', items: ['Figma', 'UI/UX', 'Machine learning', 'LLM apps'] },
+  { group: 'Data', items: ['PostgreSQL', 'MongoDB', 'Prisma', 'Mongoose'] },
+  { group: 'DevOps', items: ['Git & GitHub', 'GitHub Actions', 'CI/CD', 'Docker', 'Render', 'GitHub Pages'] },
+  { group: 'Design', items: ['Figma', 'UI/UX', 'Wireframes', 'Prototyping'] },
 ]
 
 export const process = [
-  { step: '01', title: 'Understand', text: 'A short call or chat to agree on goals, scope, budget and a milestone plan — before any code.' },
+  { step: '01', title: 'Understand', text: 'A short call or chat to agree on goals, scope, budget and a milestone plan - before any code.' },
   { step: '02', title: 'Design', text: 'Wireframes or a clickable Figma prototype so you see the product early and cheaply.' },
   { step: '03', title: 'Build & test', text: 'Working builds you can try every few days, with automated tests guarding each change.' },
   { step: '04', title: 'Launch & support', text: 'Deployment, handover of clean documented code you own, and help with fixes after launch.' },

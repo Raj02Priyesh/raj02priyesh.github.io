@@ -1,8 +1,8 @@
-# Priyesh Raj — Portfolio
+# Priyesh Raj - Portfolio
 
 My personal portfolio: **https://raj02priyesh.github.io/**
 
-Full stack developer building web apps, mobile apps and APIs — from design to deployment.
+Full stack developer building web apps, mobile apps and APIs - from design to deployment.
 Hire me on [Freelancer](https://www.freelancer.com/u/Raj02Priyesh) or email freelancerpriyesh@gmail.com.
 
 ![Portfolio hero in dark mode](docs/screenshots/hero-desktop.jpg)
@@ -24,7 +24,7 @@ Hire me on [Freelancer](https://www.freelancer.com/u/Raj02Priyesh) or email free
 
 React 19 · TypeScript · Vite · Tailwind CSS v4 · Vitest · oxlint · GitHub Actions → GitHub Pages
 
-- All content lives in [`src/data/profile.ts`](src/data/profile.ts) — update it to add projects or change details.
+- All content lives in [`src/data/profile.ts`](src/data/profile.ts) - update it to add projects or change details.
 - Light and dark themes (follows the system, remembers the visitor's choice, no flash on load).
 - SEO: meta description, Open Graph tags and `schema.org/Person` structured data.
 - Accessible: semantic sections, skip link, keyboard focus styles, reduced-motion support.

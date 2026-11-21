@@ -1,7 +1,7 @@
 import { existsSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { describe, expect, it } from 'vitest'
-import { featured, moreWork, profile, services, skills } from './profile'
+import { featured, profile, services, skills } from './profile'
 
 const publicFile = (p: string) => fileURLToPath(new URL(`../../public/${p}`, import.meta.url))
 
@@ -11,7 +11,6 @@ describe('portfolio content', () => {
       profile.freelancer,
       profile.github,
       ...featured.flatMap((p) => p.links.map((l) => l.href)),
-      ...moreWork.map((w) => w.href),
     ]
     for (const href of links) expect(href).toMatch(/^https:\/\//)
   })

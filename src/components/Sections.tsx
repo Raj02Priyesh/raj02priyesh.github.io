@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { education, featured, moreWork, process, profile, services, skills, type Project } from '../data/profile'
+import { education, featured, process, profile, services, skills, type Project } from '../data/profile'
 import { asset } from '../lib/theme'
 import { Reveal, Section } from './Layout'
 
@@ -154,7 +154,7 @@ function ProjectMedia({ project }: { project: Project }) {
 
 export function Projects() {
   return (
-    <Section id="work" eyebrow="Selected work" title="Live projects you can try right now" intro="Every project below is deployed, tested in CI and open source — click through and use them.">
+    <Section id="work" eyebrow="Selected work" title="Live projects you can try right now" intro="Every project below is deployed, tested in CI and open source - click through and use them.">
       <div className="space-y-10">
         {featured.map((p, i) => (
           <Reveal key={p.slug}>
@@ -202,34 +202,13 @@ export function Projects() {
           </Reveal>
         ))}
       </div>
-
-      <Reveal className="mt-20">
-        <h3 className="font-display text-xl font-bold">More work</h3>
-        <p className="mt-1 text-neutral-600 dark:text-neutral-400">Earlier projects across backend, machine learning and desktop apps.</p>
-      </Reveal>
-      <ul className="mt-6 grid gap-5 sm:grid-cols-2">
-        {moreWork.map((w, i) => (
-          <li key={w.href}>
-            <Reveal delay={(i % 2) * 80} className="h-full">
-              <a href={w.href} target="_blank" rel="noreferrer" className={`${card} group flex h-full flex-col p-6 transition hover:-translate-y-1 hover:border-brand-400`}>
-                <div className="flex items-start justify-between gap-3">
-                  <h4 className="font-display text-lg font-semibold">{w.title}</h4>
-                  <span className="text-neutral-400 transition group-hover:text-brand-500"><ArrowIcon /></span>
-                </div>
-                <p className="mt-2 flex-1 text-sm text-neutral-600 dark:text-neutral-400">{w.summary}</p>
-                <p className="mt-4 text-xs font-medium text-neutral-500">{w.stack.join(' · ')}</p>
-              </a>
-            </Reveal>
-          </li>
-        ))}
-      </ul>
     </Section>
   )
 }
 
 export function Services() {
   return (
-    <Section id="services" eyebrow="Services" title="One developer, the whole product" intro="Hire me for a single piece or the full build — design, frontend, mobile, backend and deployment.">
+    <Section id="services" eyebrow="Services" title="One developer, the whole product" intro="Hire me for a single piece or the full build - design, frontend, mobile, backend and deployment.">
       <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {services.map((s, i) => (
           <li key={s.title}>
@@ -327,12 +306,12 @@ export function Contact() {
     { label: 'GitHub', value: 'github.com/Raj02Priyesh', href: profile.github, icon: '🧑‍💻', external: true },
   ]
   return (
-    <Section id="contact" eyebrow="Contact" title="Let’s build something" intro="Tell me about your project — the more detail, the better my first estimate.">
+    <Section id="contact" eyebrow="Contact" title="Let’s build something" intro="Tell me about your project - the more detail, the better my first estimate.">
       <Reveal className="rounded-3xl bg-gradient-to-br from-brand-600 to-violet-700 p-8 text-white shadow-2xl shadow-brand-600/20 sm:p-12">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <p className="font-display text-2xl font-bold sm:text-3xl">Have a project in mind?</p>
-            <p className="mt-2 text-white/80">Send me the idea — I’ll reply with a plan, timeline and estimate.</p>
+            <p className="mt-2 text-white/80">Send me the idea - I’ll reply with a plan, timeline and estimate.</p>
           </div>
           <div className="flex flex-wrap gap-3">
             <a href={`mailto:${profile.email}?subject=Project%20enquiry`} className="rounded-full bg-white px-6 py-3 font-semibold text-brand-700 transition hover:bg-brand-50">
